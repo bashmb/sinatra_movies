@@ -1,0 +1,6 @@
+<h1><%= @movie_title["title"] %></h1>
+<h3><% @movie_actors.each do |actor| %>
+	<li><a href="/actors/<%=actor["id"]%>"><%= actor["name"] %></a></li>
+	<% end %>
+<br>
+<a href="/movies">Back</a>

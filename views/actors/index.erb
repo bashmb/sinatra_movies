@@ -1,0 +1,4 @@
+<h1>Actors Page</h1>
+<% @actors.each do |actor| %>
+	<li><a href = "/actors/<%= actor["id"]%>"><%= actor["name"] %><?a></li>
+	<% end %>

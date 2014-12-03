@@ -1,0 +1,10 @@
+
+<h1>Movies Page</h1>
+
+
+<% @movies.each do |movie| %>
+	<li><a href="/movies/<%= movie["id"] %>"><%= movie["title"] %></a></li>
+	<% end %>
+<br>
+
+<h2><a href="/">Back</a></h2>
